@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://foar60dros4r" path="res://scenes/platform.tscn" id="1_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://brd6aufrommjp" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://dcrehsbkkkdra" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://cuc8jfg6r63yn" path="res://scenes/coin.tscn" id="4_lbhrr"]
 
 [sub_resource type="Animation" id="Animation_lnu2h"]
 resource_name = "Move"
@@ -229,3 +230,6 @@ autoplay = &"Move"
 [node name="Ground" type="TileMapLayer" parent="." unique_id=2049151734]
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAP//AAAAAAUAAAAEAP7/AAAAAAQAAAAEAP3/AAAAAAMAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAABAAEAAAAAAAEAAAACAAEAAAAAAAEAAAADAAEAAAABAAAAAAAEAAEAAAAAAAEAAAAFAAEAAAAAAAEAAAAGAAEAAAAAAAEAAAAHAAEAAAABAAEAAAAEAAIAAAABAAEAAAAAAAIAAAAAAAEAAAABAAIAAAAAAAEAAAACAAIAAAAAAAEAAAADAAIAAAAAAAEAAAAFAAIAAAAAAAEAAAAGAAIAAAAAAAEAAAAHAAIAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_uk0u6")
+
+[node name="Coin" parent="." unique_id=82786452 instance=ExtResource("4_lbhrr")]
+position = Vector2(120, -14)
